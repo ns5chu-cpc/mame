@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <title>Twitter風UI</title>
+    <title>Twitter風埋め込み投稿</title>
     <style>
-        .tweet {
-            margin-bottom: 20px;
-            padding: 15px;
+        .embed-tweet {
             border: 1px solid #e1e8ed;
             border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            background-color: #fff;
         }
         .tweet-header {
             display: flex;
@@ -22,37 +23,57 @@
             height: 48px;
             margin-right: 10px;
         }
+        .tweet-content {
+            margin-top: 10px;
+        }
+        .tweet-footer {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
 <body>
 
 <section class="section">
     <div class="container">
-        <h1 class="title">タイムライン</h1>
+        <h1 class="title">埋め込み投稿</h1>
 
-        <div class="tweet">
+        <div class="embed-tweet">
             <div class="tweet-header">
                 <img src="https://via.placeholder.com/48" alt="Profile" class="profile-img">
                 <div>
                     <strong>ユーザー名</strong> <small>@username</small>
                 </div>
             </div>
-            <p>これはTwitter風の投稿の例です。Bulmaを使って簡単にスタイリングしています。</p>
-            <div class="content">
+            <div class="tweet-content">
+                <p>これはTwitter風の埋め込み投稿の例です。コンテンツをここに表示できます。</p>
+            </div>
+            <div class="tweet-footer">
                 <small>2時間前</small>
+                <div>
+                    <button class="button is-small">リツイート</button>
+                    <button class="button is-small">いいね</button>
+                </div>
             </div>
         </div>
 
-        <div class="tweet">
+        <div class="embed-tweet">
             <div class="tweet-header">
                 <img src="https://via.placeholder.com/48" alt="Profile" class="profile-img">
                 <div>
                     <strong>別のユーザー</strong> <small>@anotheruser</small>
                 </div>
             </div>
-            <p>Bulmaは使いやすくて便利なCSSフレームワークです！</p>
-            <div class="content">
+            <div class="tweet-content">
+                <p>Bulmaを使った埋め込み投稿は、スタイリングが簡単です！</p>
+            </div>
+            <div class="tweet-footer">
                 <small>1時間前</small>
+                <div>
+                    <button class="button is-small">リツイート</button>
+                    <button class="button is-small">いいね</button>
+                </div>
             </div>
         </div>
     </div>
