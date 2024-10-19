@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Twitter風プロフィール</title>
+    <style>
+        .profile-header {
+            background-color: #1da1f2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            border: 3px solid white;
+            margin-top: -50px;
+        }
+        .bio {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<section class="section">
+    <div class="container">
+        <div class="profile-header">
+            <h1 class="title">ユーザー名</h1>
+            <h2 class="subtitle">@username</h2>
+            <img src="https://via.placeholder.com/100" alt="Profile" class="profile-img">
+        </div>
+
+        <div class="bio">
+            <p>これはTwitter風のプロフィールの例です。ここに自己紹介や興味を追加できます。</p>
+        </div>
+
+        <div class="stats">
+            <div>
+                <strong>フォロワー</strong>
+                <p>1,234</p>
+            </div>
+            <div>
+                <strong>フォロー</strong>
+                <p>567</p>
+            </div>
+            <div>
+                <strong>ツイート</strong>
+                <p>89</p>
+            </div>
+        </div>
+
+        <button class="button is-primary">フォロー</button>
+    </div>
+</section>
+
+</body>
+</html>
