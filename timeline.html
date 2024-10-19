@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Twitter風UI</title>
+    <style>
+        .tweet {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #e1e8ed;
+            border-radius: 5px;
+        }
+        .tweet-header {
+            display: flex;
+            align-items: center;
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<section class="section">
+    <div class="container">
+        <h1 class="title">タイムライン</h1>
+
+        <div class="tweet">
+            <div class="tweet-header">
+                <img src="https://via.placeholder.com/48" alt="Profile" class="profile-img">
+                <div>
+                    <strong>ユーザー名</strong> <small>@username</small>
+                </div>
+            </div>
+            <p>これはTwitter風の投稿の例です。Bulmaを使って簡単にスタイリングしています。</p>
+            <div class="content">
+                <small>2時間前</small>
+            </div>
+        </div>
+
+        <div class="tweet">
+            <div class="tweet-header">
+                <img src="https://via.placeholder.com/48" alt="Profile" class="profile-img">
+                <div>
+                    <strong>別のユーザー</strong> <small>@anotheruser</small>
+                </div>
+            </div>
+            <p>Bulmaは使いやすくて便利なCSSフレームワークです！</p>
+            <div class="content">
+                <small>1時間前</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
